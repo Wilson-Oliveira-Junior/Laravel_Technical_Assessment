@@ -1,56 +1,163 @@
-# Mini ERP Project
+# Laravel Technical Assessment
 
 ## Overview
-This is a mini ERP (Enterprise Resource Planning) project built using Laravel. It provides functionalities to manage orders, products, coupons, and inventory. The application is designed to help businesses streamline their operations and manage their resources effectively.
+
+This repository contains my solution for a technical assessment developed with **Laravel**.
+
+The objective of the challenge was to demonstrate backend development skills by implementing a small business application with common enterprise features such as product management, order processing, inventory control, and discount handling.
+
+Rather than focusing on visual design, the project emphasizes clean architecture, Laravel best practices, and business logic implementation.
+
+---
 
 ## Features
-- **Order Management**: Create, read, update, and delete orders.
-- **Product Management**: Manage product listings, including creation and updates.
-- **Coupon Management**: Create and manage discount coupons.
-- **Inventory Management**: Track inventory levels for products.
 
-## Installation
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd mini-erp
-   ```
-3. Install dependencies:
-   ```
-   composer install
-   ```
-4. Set up your environment file:
-   ```
-   cp .env.example .env
-   ```
-5. Generate the application key:
-   ```
-   php artisan key:generate
-   ```
-6. Run migrations to set up the database:
-   ```
-   php artisan migrate
-   ```
+* Product Management
+* Order Management
+* Coupon Management
+* Inventory Control
+* CRUD Operations
+* Database Relationships
+* Business Rules Implementation
 
-## Usage
-- Start the local development server:
-  ```
-  php artisan serve
-  ```
-- Access the application at `http://localhost:8000`.
+---
 
-## Directory Structure
-- **app/Http/Controllers**: Contains all the controllers for managing different resources.
-- **app/Models**: Contains the models representing the database tables.
-- **database/migrations**: Contains migration files for creating database tables.
-- **resources/views**: Contains Blade templates for the frontend views.
-- **routes/web.php**: Defines the web routes for the application.
+## Technology Stack
 
-## Contributing
-Feel free to fork the repository and submit pull requests for any improvements or features you'd like to add.
+* PHP
+* Laravel
+* MySQL
+* Blade Templates
+* Composer
+* Eloquent ORM
+
+---
+
+## Skills Demonstrated
+
+* Laravel Framework
+* MVC Architecture
+* RESTful Development
+* CRUD Operations
+* Database Modeling
+* Business Logic
+* Authentication
+* Routing
+* Eloquent ORM
+* Blade Templates
+* Form Validation
+* Service Layer Organization
+
+---
+
+## Project Structure
+
+```text
+app/
+├── Http/
+│   ├── Controllers
+│   └── Middleware
+├── Models
+├── Providers
+└── Services
+
+database/
+├── migrations
+└── seeders
+
+resources/
+├── views
+└── js
+
+routes/
+├── web.php
+└── api.php
+```
+
+---
+
+## Local Development
+
+### Requirements
+
+* PHP 8+
+* Composer
+* Node.js
+* MySQL or MariaDB
+
+### Installation
+
+Clone the repository.
+
+```bash
+git clone <repository-url>
+```
+
+Install PHP dependencies.
+
+```bash
+composer install
+```
+
+Create the environment configuration.
+
+```bash
+cp .env.example .env
+```
+
+Generate the application key.
+
+```bash
+php artisan key:generate
+```
+
+Configure the database connection inside `.env`.
+
+Run database migrations.
+
+```bash
+php artisan migrate
+```
+
+Install frontend dependencies.
+
+```bash
+npm install
+npm run dev
+```
+
+Start the development server.
+
+```bash
+php artisan serve
+```
+
+The application will be available at:
+
+```
+http://localhost:8000
+```
+
+---
+
+## Testing
+
+Run the automated test suite:
+
+```bash
+./vendor/bin/phpunit
+```
+
+---
+
+## Purpose
+
+This repository represents a completed technical assessment preserved as part of my software engineering portfolio.
+
+It demonstrates practical experience with Laravel application development, including backend architecture, business rules implementation, database modeling, and common enterprise development patterns.
+
+---
 
 ## License
-This project is open-source and available under the MIT License.
+
+This project is available under the MIT License.
